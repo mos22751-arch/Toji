@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOJI</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark">
+
+<canvas id="bg"></canvas>
+<div id="cursor"></div>
+
+<!-- STATUS -->
+<div class="status glass">
+  <span>TOJI</span>
+  <button class="mode-btn" onclick="toggleTheme()">
+    <span id="modeIcon">🌙</span>
+  </button>
+</div>
+
+<!-- HERO -->
+<section class="page" id="hero">
+  <div class="glass hero-card">
+    <h1>TOJI</h1>
+    <p>Egyptian Developer • UI System Builder</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="page" id="about">
+  <div class="glass card">
+    <h2>About</h2>
+    <p>
+      Developer focused on building clean UI systems, modern interfaces.
+
+   TOJI isn't my name ... my real name is Mohamed Mostafa
+ </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="page" id="skills">
+  <div class="grid">
+
+    <div class="glass box"><i data-lucide=></i> Gamer </div>
+    <div class="glass box"><i data-lucide=></i> Programmer </div>
+    <div class="glass box"><i data-lucide=></i> Logic </div>
+    <div class="glass box"><i data-lucide=></i> Projects </div>
+
+  </div>
+</section>
+
+<!-- LINKS -->
+<section class="page" id="links">
+  <div class="glass panel">
+
+    <h2>U Can DM Me Here </h2>
+
+    <div class="links-grid">
+
+      <a target="_blank" href="https://instagram.com/mouhamedmostafffa">
+        <i data-lucide="instagram"></i> Instagram
+      </a>
+
+      <a target="_blank" href="https://tiktok.com/@mouhamedmostafffa">
+        <i data-lucide="video"></i> TikTok
+      </a>
+
+      <a target="_blank" href="https://www.snapchat.com/add/dr.toji">
+        <i data-lucide="ghost"></i> Snapchat
+      </a>
+
+      <a target="_blank" href="https://threads.com">
+        <i data-lucide="at-sign"></i> Threads
+      </a>
+
+      <a target="_blank" href="https://wa.me/201102550730">
+        <i data-lucide="message-circle"></i> WhatsApp
+      </a>
+
+      <a target="_blank" href="https://open.spotify.com">
+        <i data-lucide="music"></i> Spotify
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CALL -->
+<a href="tel:01102550730" class="call">
+  <i data-lucide="phone"></i>
+</a>
+
+<!-- DOCK -->
+<div class="dock glass">
+  <span onclick="scrollTo('hero')"><i data-lucide="home"></i></span>
+  <span onclick="scrollTo('about')"><i data-lucide="user"></i></span>
+  <span onclick="scrollTo('skills')"><i data-lucide="cpu"></i></span>
+  <span onclick="scrollTo('links')"><i data-lucide="link"></i></span>
+</div>
+
+<script src="script.js"></script>
+<script>lucide.createIcons();</script>
+
+</body>
+</html>
